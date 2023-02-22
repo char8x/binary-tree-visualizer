@@ -1,0 +1,11 @@
+.input {
+  width: 500px;
+}
+
+.canvas {
+  display: block;
+}
+
+.btn {
+  margin-left: 8px;
+}
