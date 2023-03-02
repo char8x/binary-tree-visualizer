@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Input, Button } from "antd";
 import _debounce from 'lodash/debounce'
 import { drawBinaryTree } from 'binary-tree-visualizer';
+// @ts-ignore
 import BinaryTree from './binaryTree'
 
 import styles from './App.module.css'
@@ -11,6 +12,7 @@ function App() {
   const [text, setText] = useState('')
   // Init a new root binary tree node
 
+  // @ts-ignore
   const handleTextChange = (e) => setText(e.target.value)
 
   const handleEnter = () => {
