@@ -35,10 +35,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
-          cache: 'pnpm'
       
       - name: Setup Pnpm
-        run: corepack enable
+        run: corepack prepare pnpm@latest --activate
 
       - name: Install dependencies
         run: pnpm install
