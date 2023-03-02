@@ -36,6 +36,9 @@ jobs:
         with:
           node-version: lts/*
           cache: 'pnpm'
+      
+      - name: Setup Pnpm
+        run: corepack enable
 
       - name: Install dependencies
         run: pnpm install
